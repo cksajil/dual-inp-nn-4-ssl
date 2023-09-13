@@ -16,5 +16,6 @@ def compute_stft(x, Fs, N=1000):
     Wrapper Function to compute Short Time Fourier
     Transform using Scipy library
     """
+    print("Compute STFT of a given signal")
     f, t, Zxx = stft(x, Fs, nperseg=N)
     return f, t, Zxx
