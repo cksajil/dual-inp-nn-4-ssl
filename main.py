@@ -18,4 +18,4 @@ from src.generate_dataset import generate_dataset
 # room.compute_rir()
 # print(room.rir[0][0])
 
-generate_dataset()
+print(generate_dataset())

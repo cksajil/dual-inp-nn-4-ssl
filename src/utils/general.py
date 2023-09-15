@@ -27,5 +27,7 @@ def generate_room_dim(config):
     in the close interval [3, 6]
     """
     offset = config["source_offset"]
-    width, height = np.random.uniform(low=3, high=6, size=2)
+    N = config["num_data_points"]
+    width = np.random.uniform(low=3, high=6, size=N)
+    height = np.random.uniform(low=3, high=6, size=N)
     return width - offset, height - offset
