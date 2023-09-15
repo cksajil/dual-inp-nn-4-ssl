@@ -4,6 +4,9 @@
 # import pyroomacoustics as pra
 # import numpy as np
 
+from src.utils.general import generate_room_dim
+from src.utils.helpers import load_config
+
 # x = generate_white_noise()
 # freq, time, spectrum = compute_stft(x, Fs=8000)
 
@@ -24,3 +27,8 @@
 
 # print(config["num_mics"])
 # print(config["num_sources"])
+
+config = load_config("config.yaml")
+
+width, height = generate_room_dim(config)
+print(width, height)

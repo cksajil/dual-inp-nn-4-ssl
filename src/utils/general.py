@@ -19,3 +19,13 @@ def compute_stft(x, Fs, N=1000):
     print("Compute STFT of a given signal")
     f, t, Zxx = stft(x, Fs, nperseg=N)
     return f, t, Zxx
+
+
+def generate_room_dim(config):
+    """
+    Generate room dimensions (width & height) randomly
+    in the close interval [3, 6]
+    """
+    offset = config["source_offset"]
+    width, height = np.random.uniform(low=3, high=6, size=2)
+    return width - offset, height - offset
