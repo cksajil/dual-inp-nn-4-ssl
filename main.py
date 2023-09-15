@@ -1,9 +1,5 @@
-# from utils import generate_white_noise
-# from utils import compute_stft
-# from utils import load_config
 # import pyroomacoustics as pra
 # import numpy as np
-
 from src.utils.general import generate_room_dim
 from src.utils.helpers import load_config
 
@@ -23,10 +19,6 @@ from src.utils.helpers import load_config
 # room.compute_rir()
 # print(room.rir[0][0])
 
-# config = load_config("config.yaml")
-
-# print(config["num_mics"])
-# print(config["num_sources"])
 
 config = load_config("config.yaml")
 
