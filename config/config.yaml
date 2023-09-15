@@ -1,4 +1,5 @@
 project_doi:
 num_mics: 4
 num_sources: 1
+source_offset: 0.5
 room_height: 3
