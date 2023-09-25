@@ -1,7 +1,6 @@
 # import pyroomacoustics as pra
 # import numpy as np
 from src.generate_dataset import generate_dataset
-import matplotlib.pyplot as plt
 
 # x = generate_white_noise()
 # freq, time, spectrum = compute_stft(x, Fs=8000)
@@ -19,8 +18,4 @@ import matplotlib.pyplot as plt
 # room.compute_rir()
 # print(room.rir[0][0])
 
-widths, heights = generate_dataset()
-plt.scatter(widths, heights)
-plt.xlim([2, 7])
-plt.ylim([2, 7])
-plt.show()
+generate_dataset()
