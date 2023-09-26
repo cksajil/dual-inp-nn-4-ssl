@@ -2,6 +2,7 @@ project_doi:
 num_mics: 4
 num_sources: 1
 source_offset: 0.5
-room_height: 3
+room_height: 5
+plane_height: 2
 num_data_points: 100
 data_dir: synthetic_data

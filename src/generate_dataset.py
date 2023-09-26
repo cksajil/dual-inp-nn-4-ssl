@@ -9,7 +9,7 @@ def generate_dataset():
     config = load_config("config.yaml")
     widths, heights = generate_room_dim(config)
     N = config["num_data_points"]
-    rt60s = np.random.uniform(low=0.25, high=0.7, size=N)
+    rt60s = np.random.uniform(low=0.3, high=0.6, size=N)
     dataset["Widths"] = widths
     dataset["Heights"] = heights
     dataset["RT60s"] = rt60s
