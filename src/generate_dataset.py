@@ -1,3 +1,5 @@
+import os
+import pickle
 import numpy as np
 from .utils import generate_room_dim, load_config
 
@@ -11,4 +13,5 @@ def generate_dataset():
     dataset["Widths"] = widths
     dataset["Heights"] = heights
     dataset["RT60s"] = rt60s
-    return dataset
+    with open(os.path.join(config["data_dir"], "data.pkl"), "wb") as f:
+        pickle.dump(dataset, f)

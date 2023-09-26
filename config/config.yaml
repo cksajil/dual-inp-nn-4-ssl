@@ -4,3 +4,4 @@ num_sources: 1
 source_offset: 0.5
 room_height: 3
 num_data_points: 100
+data_dir: synthetic_data
